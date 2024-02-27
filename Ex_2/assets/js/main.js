@@ -22,43 +22,32 @@ el_btnStart.addEventListener('click', function () {
 	//console.log(typeof userNumber, userNumber);
 
 	// - generare un numero randomico da 1 a 5 dalla funzione Math
-	/*
+	
 		function generateRandomNumber() {
 	
+			let pcNumber = Math.round(Math.random() * 5) + 1; // genera un numero randomico da 1 a 5
+			console.log(`numero random del pc ${pcNumber}`);
+			
 			return pcNumber
 			
 		}
 		
-		
-		generateRandomNumber();
-		console.log(pcNUmber);
-	*/
-
-
-	let pcNumber = Math.round(Math.random() * 5) + 1; // genera un numero randomico da 1 a 5
-
-	console.log(`numero random del pc ${pcNumber}`);
+		let pcNumber = generateRandomNumber();		
+	
 
 	// sommiamo i numeri e controlliamo se la somma è pari o dispari
-
 
 	let sum = userNumber + pcNumber;
 	console.log(`La somma dei numeri è: ${sum}`);
 
-
-
 	function pariDispari(somma) {
 
 		//console.log(somma);
-
 		if (somma % 2 === 0) {
 			return 0
-
 		} else {
 			return 1
-
 		}
-
 	}
 
 
@@ -66,6 +55,7 @@ el_btnStart.addEventListener('click', function () {
 
 
 	// - controllare se il numero è pari o dispari
+	// - dichiarare chi ha vinto
 
 	if (pariDispari(sum) === 0 && userChoice === 0) {
 
@@ -75,29 +65,5 @@ el_btnStart.addEventListener('click', function () {
 		alert(`Hai perso, la somma dei numeri è: ${sum}! Dispari!`)
 	}
 
-
-
-
-
-
-
-
-
-
-
 })
 
-
-
-
-
-/*
-
-
-
-
-
-// - dichiarare chi ha vinto
-
-
-*/
