@@ -2,10 +2,42 @@
 
 // - far scegliere all'utente pari o disapri con un prompt
 
-let userChoice = prompt("Se scegli pari, scrivilo qui sotto, altrimenti otterrai dispari:") //Selezione da parte dell'utente di pari o dispari
-console.log(userChoice);
 
-userChoice = userChoice.toLowerCase() // trasformo il testo in minuscolo per compararlo
+
+
+let el_userChoice = document.getElementById("pari_dispari"); //Selezione da parte dell'utente di pari o dispari
+let el_userNumber = document.getElementById("number_user"); // dichiarazione input numero utente
+const el_btnStart = document.getElementById("btn_start");	// pulsante di start dichiarato
+
+let userChoice;
+let userNumber;
+
+
+//Alla pressione del pulsante Leggo i dato dagli input di html
+
+el_btnStart.addEventListener('click', function () {
+	
+	userChoice = el_userChoice;
+	userNumber  = el_userNumber;
+	
+	console.log(userChoice, userNumber);
+
+})
+
+
+/*
+el_btnStart.addEventListener("click", function () {
+
+	
+	
+
+
+})
+*/
+
+
+
+/*
 
 if (userChoice == "pari"){
 	userChoice = 0
@@ -28,3 +60,6 @@ const numPc = Math.round(Math.random()*5)+1;
 // - controllare se il numero è pari o dispari
 
 // - dichiarare chio ha vinto
+
+
+*/
