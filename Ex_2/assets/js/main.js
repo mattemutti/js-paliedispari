@@ -51,7 +51,7 @@ el_btnStart.addEventListener('click', function () {
 	}
 
 
-	console.log(pariDispari(sum)); // se leggo 0 il numero è pari se leggo 1 il numero è dispari
+	//console.log(pariDispari(sum)); // se leggo 0 il numero è pari se leggo 1 il numero è dispari
 
 
 	// - controllare se il numero è pari o dispari
