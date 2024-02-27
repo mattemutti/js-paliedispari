@@ -2,6 +2,19 @@
 
 
 // - chiedere con un prompt all'utente di inserire una parola e salvarla in una variabile
+const wordUser = "fragile"; //prompt("inserisci una parola")
+console.log(wordUser);
+
+// trasformo una stringa in un array dividendo i vari array con "" 
+//(niente , quindi ogni parola diventa un oggetto dell'array)
+const wordArray = wordUser.split("") 
+console.log(wordArray);
+
+//iverte l'ordine delle posizioni dell'array dall'ultima posizione alla prima
+const wordRev = wordArray.reverse() 
+console.log(wordArray);
+
+// trasformare l'array in stringa per avere la parola al contrario 
 
 
 
