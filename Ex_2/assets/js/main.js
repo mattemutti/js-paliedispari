@@ -21,6 +21,12 @@ el_btnStart.addEventListener('click', function () {
 	console.log(typeof userChoice, userChoice);
 	console.log(typeof userNumber, userNumber);
 
+	// - generare un numero randomico da 1 a 5 dalla funzione Math
+	
+	const pcNumber = Math.round(Math.random()*5)+1;
+	console.log(typeof pcNumber, pcNumber);
+	
+
 
 
 
@@ -32,37 +38,13 @@ el_btnStart.addEventListener('click', function () {
 })
 
 
-/*
-el_btnStart.addEventListener("click", function () {
-
-	
-	
-
-
-})
-*/
 
 
 
 /*
 
-if (userChoice == "pari"){
-	userChoice = 0
-} else{
-	userChoice = 1
-}
-console.log(userChoice);
 
-// - far inserire un numero da 1 a 5 con un Prompt
 
-const numberUser = prompt('Inserisci un numero da 1 a 5:')
-console.log(numberUser);
-
-if (numberUser )
-
-// - generare un numero randomico da 1 a 5 dalla funzione Math
-
-const numPc = Math.round(Math.random()*5)+1;
 
 // - controllare se il numero è pari o dispari
 
