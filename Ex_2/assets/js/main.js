@@ -1,9 +1,7 @@
 // EX 2 - PARI O DISPARI
 
-// - far scegliere all'utente pari o disapri con un prompt
 
-
-
+// - far scegliere all'utente pari o disapri e un numero da 1 a 5
 
 let el_userChoice = document.getElementById("pari_dispari"); //Selezione da parte dell'utente di pari o dispari
 let el_userNumber = document.getElementById("number_user"); // dichiarazione input numero utente
@@ -13,14 +11,23 @@ let userChoice;
 let userNumber;
 
 
-//Alla pressione del pulsante Leggo i dato dagli input di html
+//Alla pressione del pulsante Leggo i dato dagli input di html con le scelte fatte
 
 el_btnStart.addEventListener('click', function () {
 	
-	userChoice = el_userChoice;
-	userNumber  = el_userNumber;
+	userChoice = Number(el_userChoice.value);
+	userNumber = Number(el_userNumber.value);
 	
-	console.log(userChoice, userNumber);
+	console.log(typeof userChoice, userChoice);
+	console.log(typeof userNumber, userNumber);
+
+
+
+
+
+
+
+
 
 })
 
