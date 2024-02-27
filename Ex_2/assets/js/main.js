@@ -14,18 +14,34 @@ let userNumber;
 //Alla pressione del pulsante Leggo i dato dagli input di html con le scelte fatte
 
 el_btnStart.addEventListener('click', function () {
-	
+
 	userChoice = Number(el_userChoice.value);
 	userNumber = Number(el_userNumber.value);
-	
+
 	console.log(typeof userChoice, userChoice);
 	console.log(typeof userNumber, userNumber);
 
 	// - generare un numero randomico da 1 a 5 dalla funzione Math
+/*
+	function generateRandomNumber() {
+
+		return pcNumber
+		
+	}
 	
-	const pcNumber = Math.round(Math.random()*5)+1;
-	console.log(typeof pcNumber, pcNumber);
 	
+	generateRandomNumber();
+	console.log(pcNUmber);
+*/
+
+
+	let pcNumber = Math.round(Math.random() * 5) + 1; // genera un numero randomico da 1 a 5
+
+	console.log(pcNumber);
+	
+	
+
+
 
 
 
