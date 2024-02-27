@@ -18,28 +18,62 @@ el_btnStart.addEventListener('click', function () {
 	userChoice = Number(el_userChoice.value);
 	userNumber = Number(el_userNumber.value);
 
-	console.log(typeof userChoice, userChoice);
-	console.log(typeof userNumber, userNumber);
+	//console.log(typeof userChoice, userChoice);
+	//console.log(typeof userNumber, userNumber);
 
 	// - generare un numero randomico da 1 a 5 dalla funzione Math
-/*
-	function generateRandomNumber() {
-
-		return pcNumber
+	/*
+		function generateRandomNumber() {
+	
+			return pcNumber
+			
+		}
 		
-	}
-	
-	
-	generateRandomNumber();
-	console.log(pcNUmber);
-*/
+		
+		generateRandomNumber();
+		console.log(pcNUmber);
+	*/
 
 
 	let pcNumber = Math.round(Math.random() * 5) + 1; // genera un numero randomico da 1 a 5
 
-	console.log(pcNumber);
-	
-	
+	console.log(`numero random del pc ${pcNumber}`);
+
+	// sommiamo i numeri e controlliamo se la somma è pari o dispari
+
+
+	let sum = userNumber + pcNumber;
+	console.log(`La somma dei numeri è: ${sum}`);
+
+
+
+	function pariDispari(somma) {
+
+		//console.log(somma);
+
+		if (somma % 2 === 0) {
+			return 0
+
+		} else {
+			return 1
+
+		}
+
+	}
+
+
+	console.log(pariDispari(sum)); // se leggo 0 il numero è pari se leggo 1 il numero è dispari
+
+
+	// - controllare se il numero è pari o dispari
+
+	if (pariDispari(sum) === 0 && userChoice === 0) {
+
+		alert(`Hai vinto, la somma dei numeri è: ${sum}! Pari!`)
+	} else {
+
+		alert(`Hai perso, la somma dei numeri è: ${sum}! Dispari!`)
+	}
 
 
 
@@ -62,9 +96,8 @@ el_btnStart.addEventListener('click', function () {
 
 
 
-// - controllare se il numero è pari o dispari
 
-// - dichiarare chio ha vinto
+// - dichiarare chi ha vinto
 
 
 */

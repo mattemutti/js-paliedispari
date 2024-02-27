@@ -32,8 +32,9 @@ Dichiariamo chi ha vinto.
 - far scegliere all'utente pari o disapri
 - far inserire un numero da 1 a 5
 - generare un numero randomico da 1 a 5 dalla funzione Math
+- sommiamoli
 - controllare se il numero è pari o dispari
-- dichiarare chio ha vinto
+- dichiarare chi ha vinto
 
 
 
